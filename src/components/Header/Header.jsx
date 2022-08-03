@@ -20,6 +20,12 @@ const Header = () => {
 		setOpenMenu((prev) => !prev);
 		document.body.style.overflowY = !openMenu ? 'hidden' : 'unset';
 	};
+
+	const scrollHandler = () => {
+		setTimeout(() => {
+			history.pushState('', document.title, window.location.pathname);
+		}, 1000);
+	};
 	return (
 		<header className='header' id='header'>
 			<nav className='header__nav container'>
@@ -33,17 +39,17 @@ const Header = () => {
 				<div className='header__desktop'>
 					<ul className='header__desktop-list'>
 						<li className='header__desktop-item'>
-							<a className='header__desktop-link' href='#services'>
+							<a onClick={() => scrollHandler()} className='header__desktop-link' href='#services'>
 								Услуги
 							</a>
 						</li>
 						<li className='header__desktop-item'>
-							<a className='header__desktop-link' href='#concept'>
+							<a onClick={() => scrollHandler()} className='header__desktop-link' href='#concept'>
 								О нас
 							</a>
 						</li>
 						<li className='header__desktop-item'>
-							<a className='header__desktop-link' href='#footer'>
+							<a onClick={() => scrollHandler()} className='header__desktop-link' href='#footer'>
 								Контакты
 							</a>
 						</li>
@@ -59,17 +65,17 @@ const Header = () => {
 						<div className='header__side-row'>
 							<ul className='header__menu'>
 								<li className='header__menu-item'>
-									<a href='#services' className='header__menu-link' onClick={(e) => menuHandler(e)}>
+									<a href='#services' className='header__menu-link' onClick={() => scrollHandler()}>
 										Услуги
 									</a>
 								</li>
 								<li className='header__menu-item'>
-									<a href='#concept' className='header__menu-link' onClick={(e) => menuHandler(e)}>
+									<a href='#concept' className='header__menu-link' onClick={() => scrollHandler()}>
 										О нас
 									</a>
 								</li>
 								<li className='header__menu-item'>
-									<a href='#footer' className='header__menu-link' onClick={(e) => menuHandler(e)}>
+									<a href='#footer' className='header__menu-link' onClick={() => scrollHandler()}>
 										Контакты
 									</a>
 								</li>
