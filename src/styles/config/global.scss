@@ -1,0 +1,36 @@
+// Loader
+
+.loader {
+	border-top-color: #3498db;
+	-webkit-animation: spinner 1.5s linear infinite;
+	animation: spinner 1.5s linear infinite;
+}
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+// container
+.container {
+	max-width: 1200px;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1,
+h2 {
+	font-family: 'Akzidenz-Grotesk Pro';
+}
+
+a {
+	transition: all 0.3s ease-in-out;
+	font-family: 'Akzidenz-Grotesk Pro';
+}

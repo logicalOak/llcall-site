@@ -1,0 +1,43 @@
+.features {
+	background: #fafafc;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	&-list {
+		display: grid;
+		gap: 20px;
+		//media
+		@include mq(md) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		//media
+		@include mq(xl) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	&-item {
+		padding: 30px 20px;
+		box-shadow: 0 6px 8px rgb(200 209 222 / 50%);
+		border-radius: 6px;
+
+		&__title {
+			font-weight: 600;
+			margin-bottom: 15px;
+		}
+
+		&__desc {
+			font-size: 13px;
+			color: #726f80;
+		}
+	}
+
+	&-image {
+		width: 85px;
+		height: 85px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+}

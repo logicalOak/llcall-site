@@ -1,0 +1,82 @@
+.services {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: #fafafc;
+
+	&-info {
+		margin-bottom: 80px;
+		//media
+		@include mq(xl) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 1.5;
+		margin-bottom: 25px;
+		max-width: 785px;
+		//media
+		@include mq(md) {
+			font-size: 34px;
+			line-height: 1.38;
+		}
+		//media
+		@include mq(xl) {
+			margin-left: 50px;
+		}
+	}
+
+	&__desc {
+		color: #726f80;
+		max-width: 500px;
+		width: 100%;
+	}
+
+	&-list {
+		display: grid;
+		gap: 20px;
+		//media
+		@include mq(md) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		//media
+		@include mq(xl) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	&-item {
+		padding: 40px 20px 30px;
+		background: linear-gradient(17.63deg, #a18cd1 0, #9c5aec 100%);
+		border-radius: 6px;
+		box-shadow: 0 6px 8px rgb(200 209 222 / 50%);
+
+		&__title {
+			color: #fff;
+			margin-left: 20px;
+			margin-bottom: 15px;
+			font-size: 24px;
+		}
+
+		&__subitem {
+			color: #fff;
+			padding: 15px 40px 15px 20px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+		}
+	}
+
+	&-image {
+		width: 70px;
+		height: 70px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 50px;
+		margin-left: 20px;
+	}
+}

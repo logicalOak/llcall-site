@@ -1,0 +1,70 @@
+.consultation {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #fafafc;
+
+	&-slide {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		border-radius: 6px;
+		padding: 40px 50px !important;
+		//media
+		//media
+		@include mq(md) {
+			min-height: 291px;
+		}
+		@include mq(lg) {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 100% 20%;
+			padding: 100px !important;
+			min-height: 411px;
+		}
+
+		&--first {
+			background-image: url('../../../assets//images/con-slider-1.jpg');
+		}
+
+		&--second {
+			background-image: url('../../../assets//images/con-slider-2.jpeg');
+		}
+	}
+
+	&__title {
+		font-size: 20px;
+		margin-bottom: 10px;
+		font-weight: 700;
+		line-height: 1.16;
+		max-width: 420px;
+		//media
+		@include mq(md) {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__text {
+		margin-bottom: 20px;
+		//media
+		@include mq(md) {
+			font-size: 17px;
+			margin-bottom: 40px;
+		}
+	}
+
+	&__btn {
+		max-width: 390px;
+		width: 100%;
+		text-align: center;
+		padding: 15px;
+		background: #9c5aec;
+		color: #fff;
+		border-radius: 4px;
+		margin-top: auto;
+		//media
+		@include mq(lg) {
+			margin-bottom: -30px;
+		}
+	}
+}

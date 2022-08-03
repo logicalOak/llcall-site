@@ -1,0 +1,61 @@
+.consult {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #fafafc;
+	//media
+	@include mq(lg) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+		background-image: url('../../../assets//images/consult.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 100% 82%;
+	}
+
+	&__title {
+		font-size: 20px;
+		max-width: 785px;
+		line-height: 1.5;
+		margin-bottom: 20px;
+		font-weight: 600;
+		//media
+		@include mq(md) {
+			font-size: 34px;
+		}
+	}
+
+	&__desc {
+		margin-bottom: 20px;
+		//media
+		@include mq(md) {
+			font-size: 17px;
+			margin-bottom: 35px;
+		}
+	}
+
+	&-form {
+		display: grid;
+		width: 100%;
+		gap: 20px;
+
+		//media
+		@include mq(md) {
+			grid-template-columns: 250px 250px 160px;
+			gap: 10px;
+		}
+
+		&__input {
+			padding: 15px 10px;
+			background-color: #fff;
+			border-radius: 4px;
+		}
+
+		& .consult-form__btn {
+			text-align: center;
+			padding: 15px;
+			background: #9c5aec;
+			color: #fff;
+			border-radius: 4px;
+		}
+	}
+}

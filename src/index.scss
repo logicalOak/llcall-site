@@ -1,0 +1,38 @@
+@import './styles/config/variables';
+@import './styles/utils/mixins';
+@import './styles/config/fonts';
+@import './styles/config/reset';
+@import './styles/config/global';
+
+@import './styles/components/Footer.scss';
+@import './styles/components/Header.scss';
+@import './styles/components/Hero.scss';
+@import './styles/components/Features.scss';
+@import './styles/components/Consultation.scss';
+@import './styles/components/Services.scss';
+@import './styles/components/Concept.scss';
+@import './styles/components/Consult.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		min-height: 100%;
+		position: relative;
+		overflow-x: hidden;
+		scroll-behavior: smooth;
+		text-rendering: optimizeSpeed;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		font-size: var(--base-font-size);
+		line-height: var(--base-line-height);
+		font-family: var(--base-font-family);
+		font-weight: 400;
+	}
+}
