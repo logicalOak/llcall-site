@@ -20,15 +20,15 @@ export default defineConfig(({mode}) => {
     return {
         plugins: [
             react(),
-            // uncomment before deploy
-            // viteStaticCopy({
-            //     targets: [
-            //         {
-            //             src: "./assets/images",
-            //             dest: "./assets"
-            //         },
-            //     ]
-            // })
+            uncomment before deploy
+            viteStaticCopy({
+                targets: [
+                    {
+                        src: "./assets/images",
+                        dest: "./assets"
+                    },
+                ]
+            })
         ],
         // ENV config
         define: processEnvValues
