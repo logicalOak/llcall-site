@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Toggle } from '../index';
 import burger from '../../../assets/images/burger.svg';
 import { useState } from 'react';
 
@@ -29,9 +28,9 @@ const Header = () => {
 	return (
 		<header className='header' id='header'>
 			<nav className='header__nav container'>
-				<Link className='header__logo logo' to='/'>
+				<a className='header__logo logo' href='#'>
 					<img src='../../../assets/images/logo.svg' alt='llcall' />
-				</Link>
+				</a>
 				<button className='header__burger' onClick={() => burgerHandler()}>
 					<img src={burger} alt='open menu' className='header__burger-ico' />
 				</button>

@@ -1,14 +1,10 @@
 .hero {
-	// display: flex;
-	// flex-direction: column;
 	display: grid;
 	padding-top: 40px;
 	padding-bottom: 40px;
 
 	//media
 	@include mq(xl) {
-		// flex-direction: row;
-		// justify-content: space-between;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 20px;
 	}
@@ -42,5 +38,11 @@
 	&__btn {
 		border-bottom: 1px solid #15141a;
 		transition: all 0.3s ease-in-out;
+
+		&:hover,
+		&:focus {
+			color: #ffe159;
+			border-color: #ffe159;
+		}
 	}
 }

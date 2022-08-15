@@ -1,6 +1,7 @@
 .header {
 	&__logo {
-		max-width: 156px;
+		max-width: 120px;
+		width: 100%;
 		display: block;
 	}
 
@@ -25,7 +26,7 @@
 
 		&-link {
 			align-items: center;
-			color: #8a29ea;
+			color: #ffe159;
 			display: flex;
 			font-size: 20px;
 			font-weight: 600;
@@ -37,7 +38,7 @@
 
 			&:hover,
 			&:focus {
-				opacity: 0.7;
+				color: #000;
 			}
 		}
 	}

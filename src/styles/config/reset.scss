@@ -141,11 +141,11 @@ button:-moz-focusring,
 .visually-hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
-	height: 1px;
+	width: 1px;
+	height: 0;
 	overflow: hidden;
 	position: absolute;
 	white-space: nowrap;
-	width: 1px;
 }
 
 // 💡 Reset
