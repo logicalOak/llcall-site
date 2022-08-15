@@ -33,13 +33,17 @@ const Home = () => {
 
 	return (
 		<>
-			<Hero active={modalActive} onOpen={modalOpenHandler} />
+			<Hero active={modalActive} setActive={setModalActive} />
 			<Features />
 			<Consultation />
 			<Services />
 			<Concept />
 			<Consult />
-			<Modal active={modalActive} setActive={setModalActive} onClose={modalCloseHandler} />
+			<Modal
+				active={modalActive}
+				setActive={setModalActive}
+				onClose={() => setModalActive(false)}
+			/>
 		</>
 	);
 };
