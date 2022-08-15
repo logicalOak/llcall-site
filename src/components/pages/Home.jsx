@@ -14,20 +14,32 @@ import { useState } from 'react';
  */
 const Home = () => {
 	const [modalActive, setModalActive] = useState(false);
+	let windowOffset = 0;
+
+	const modalOpenHandler = () => {
+		setModalActive(true);
+		windowOffset = window.scrollY;
+		document.body.setAttribute(
+			'style',
+			`position: fixed; top: -${windowOffset}px; left: 0; right: 0;`,
+		);
+	};
+
+	const modalCloseHandler = () => {
+		setModalActive(false);
+		document.body.setAttribute('style', '');
+		window.scrollTo(0, windowOffset);
+	};
 
 	return (
 		<>
-			<Hero active={modalActive} setActive={setModalActive} />
+			<Hero active={modalActive} onOpen={modalOpenHandler} />
 			<Features />
 			<Consultation />
 			<Services />
 			<Concept />
 			<Consult />
-			<Modal
-				active={modalActive}
-				setActive={setModalActive}
-				onClose={() => setModalActive(false)}
-			/>
+			<Modal active={modalActive} setActive={setModalActive} onClose={modalCloseHandler} />
 		</>
 	);
 };

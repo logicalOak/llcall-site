@@ -5,7 +5,7 @@ const Modal = ({ active, setActive, onClose }) => {
 	const keydownHandler = ({ key }) => {
 		switch (key) {
 			case 'Escape':
-				setActive(false);
+				onClose();
 				break;
 			default:
 		}
@@ -16,7 +16,7 @@ const Modal = ({ active, setActive, onClose }) => {
 		return () => document.removeEventListener('keydown', keydownHandler);
 	});
 	return (
-		<div className={active ? 'modal active' : 'modal'} onClick={() => setActive(false)}>
+		<div className={active ? 'modal active' : 'modal'} onClick={onClose}>
 			<div
 				className={active ? 'modal__content active' : 'modal__content'}
 				onClick={(e) => e.stopPropagation()}>
