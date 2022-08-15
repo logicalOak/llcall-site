@@ -33,7 +33,7 @@
 			font-size: 20px;
 			margin-bottom: 15px;
 			font-weight: 600;
-			// margin-left: 40px;
+			font-family: 'Museo Sans Cyrl';
 			//media
 			@include mq(md) {
 				font-size: 24px;
@@ -45,7 +45,7 @@
 			max-width: 300px;
 			margin-left: auto;
 			margin-right: auto;
-			// margin-left: 40px;
+			letter-spacing: 0.005em;
 		}
 	}
 }

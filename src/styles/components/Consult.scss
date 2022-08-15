@@ -50,12 +50,17 @@
 			border-radius: 4px;
 		}
 
-		& .consult-form__btn {
+		&__btn {
 			text-align: center;
 			padding: 15px;
 			background: #ffe159;
 			color: #fff;
 			border-radius: 4px;
+			//media
+			@include mq(md) {
+				max-width: 180px;
+				width: 100%;
+			}
 		}
 	}
 }
