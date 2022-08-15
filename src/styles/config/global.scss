@@ -1,6 +1,6 @@
 // container
 .container {
-	max-width: 1200px;
+	max-width: 1540px;
 	width: 100%;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -9,11 +9,12 @@
 }
 
 h1,
-h2 {
-	font-family: 'Akzidenz-Grotesk Pro';
+h2,
+button,
+a {
+	font-family: 'Museo Sans Cyrl', system-ui, Tahoma, sans-serif;
 }
 
 a {
 	transition: all 0.3s ease-in-out;
-	font-family: 'Akzidenz-Grotesk Pro';
 }

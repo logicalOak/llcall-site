@@ -1,32 +1,41 @@
+// Roboto
 @font-face {
-	font-family: 'Golos';
-	src: url('../../../assets/fonts/Golos-Text_DemiBold.woff2') format('woff2'),
-		url('../../../assets/fonts/Golos-Text_DemiBold.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Golos';
-	src: url('../../../assets/fonts/GolosText-Regular.woff2') format('woff2'),
-		url('../../../assets/fonts/GolosText-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'RoadRadio';
-	src: url('../../../assets//fonts/RoadRadio.woff2') format('woff2'),
-		url('../../../assets/fonts/RoadRadio.woff') format('woff');
+	font-family: 'Roboto';
+	src: url('../../../assets/fonts/Roboto-Regular.woff2') format('woff2'),
+		url('../../../assets/fonts/Roboto-Regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 
+// Museo Sans
+
+// 300
 @font-face {
-	font-family: 'Akzidenz-Grotesk Pro';
-	src: url('../../../assets/fonts/AkzidenzGroteskPro-Regular.woff2') format('woff2'),
-		url('../../../assets/fonts/AkzidenzGroteskPro-Regular.woff') format('woff');
+	font-family: 'Museo Sans Cyrl';
+	src: url('../../../assets//fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+		url('../../../assets//fonts/MuseoSansCyrl-300.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+// 500
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../../../assets//fonts/MuseoSansCyrl-500.woff2') format('woff2'),
+		url('../../../assets//fonts/MuseoSansCyrl-500.woff') format('woff');
 	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+// 700
+@font-face {
+	font-family: 'Museo Sans Cyrl';
+	src: url('../../../assets//fonts/MuseoSansCyrl-700.woff2') format('woff2'),
+		url('../../../assets//fonts/MuseoSansCyrl-700.woff') format('woff');
+	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
 }

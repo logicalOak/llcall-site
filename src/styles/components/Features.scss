@@ -22,13 +22,24 @@
 		border-radius: 6px;
 
 		&__title {
+			font-family: 'Museo Sans Cyrl';
 			font-weight: 600;
 			margin-bottom: 15px;
+			//media
+			@include mq(md) {
+				font-size: 19px;
+			}
 		}
 
 		&__desc {
 			font-size: 13px;
 			color: #726f80;
+			//media
+			@include mq(md) {
+				font-size: 15px;
+				line-height: 1.6;
+				letter-spacing: 0.005em;
+			}
 		}
 	}
 
