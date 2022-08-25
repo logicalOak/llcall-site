@@ -68,7 +68,6 @@
 		//media
 		@include mq(md) {
 			max-width: 180px;
-			width: 100%;
 		}
 		//media
 		@include mq(lg) {
